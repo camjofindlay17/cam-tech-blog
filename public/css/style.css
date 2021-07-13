@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: whitesmoke;
+  }
+
+.bg-light {
+    background-color: #1d6baf!important;
+}
+
+.title {
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.post {
+    font-size: 20px;
+}
+
+.add {
+    font-size: 1rem
+    
+}
+
+.wrapper {
+    max-width: 75%;
+    margin-right: auto;
+    margin-left:  auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color:rgba(83, 82, 82, 0.938)
+}
+
+.card {
+    margin: 20px;
+}
+
+.card:hover {
+    opacity: 0.8;
+    cursor: pointer
+}
+
+.card-header {
+    font-size: 22px;
+    background-color:#a7cef1
+}
+
+.card-body {
+    background-color:rgba(190, 188, 188, 0.479)
+}
+
+.blockquote {
+    font-size: 18px;
+}
+
+.blockquote-footer {
+    text-align: right;
+    color: black;
+    margin-top: 2px
+}
+
+.post-card {
+    margin: 20px;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.comment-card {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0;
+}
+
+.post-card-body {
+    background-color:#8db7db
+}
+
+.comment-card:hover {
+    opacity: 1;
+    cursor: none
+}
+
+.push {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.dash-post {
+    display: flex;
+    justify-content:space-between
+}

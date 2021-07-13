@@ -1,0 +1,31 @@
+<div class="title">Welcome to Your Dashboard</div>
+<div>Create New Post</div>
+  <div class="wrapper">
+    <form class="newPost">
+      <div class="form-group">
+        <input class="form-control" id="post-title" name="post_title" rows="1" placeholder="Title" required></input>
+        <input class="form-control" id="post" name="post" placeholder="Enter Text" required></input>
+        <button type="submit" class="btn submitbtn btn-primary">Submit Post</button> 
+      </div>
+    </form>
+  </div>
+<div class="previous">
+<div>Previous Posts</div>
+{{#each posts}}
+<div class="wrapper">
+    <a href="/post/{{id}}">
+    <div class="card">
+      <div class="card-header dash-post">
+        <div>{{post_title}}</div>
+      </div>
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <p>{{post}}</p>
+        </blockquote>
+      </div>
+    </div>
+</div>
+{{/each}}
+</div>
+
+<script src="/js/create.js"></script>

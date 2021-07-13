@@ -1,0 +1,36 @@
+    <div class="post-card post" data-post_id="{{posts.id}}">
+      <div class="card-header">
+        {{posts.post_title}}
+      </div>
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <p>{{posts.post}}</p>
+          <footer class="blockquote-footer">{{posts.user.user_name}}</footer>
+        </blockquote>
+      </div>
+    </div>
+<div class="wrapper">
+    {{#if loggedIn}}
+     <form class="newComment">
+        <div class="form-group">
+          <input class="form-control" id="newComment" name="newComment" rows="3" placeholder="Add Comment" required></input>
+          <button type="submit" class="btn submitbtn btn-primary">Submit Comment</button> 
+        </div>
+      </form>
+    {{else}}
+    <a style="color: red; font-size: 20px" href="/login">Login to Comment</a>
+    {{/if}}
+    <div class="title">User Comments</div>
+    {{#each posts.comments as |post_comment|}}
+    <div class="card comment-card">
+      <div class="card-body post-card-body">
+        <blockquote class="blockquote mb-0">
+          <p>{{text}}</p>
+          <footer class="blockquote-footer">{{user.user_name}}</footer>
+        </blockquote>
+      </div>
+    </div>
+    {{/each}}
+</div>
+
+<script src="/js/comment.js"></script>
