@@ -1,0 +1,37 @@
+{
+  "name": "project-2",
+  "version": "1.0.0",
+  "description": "Review application for sneakers",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "seed": "node seeds/index.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorozco4/project-2.git"
+  },
+  "author": "jorozco, JadaE789, camjofindlay17",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jorozco4/project-2/issues"
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.1",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "express-session": "^1.17.2",
+    "handlebars": "^4.7.7",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.2",
+    "sneaks-api": "^1.1.2"
+  },
+  "homepage": "https://github.com/jorozco4/project-2#readme"
+}
