@@ -1,7 +1,7 @@
 {
-  "name": "project-2",
+  "name": "cam-tech-blog",
   "version": "1.0.0",
-  "description": "Review application for sneakers",
+  "description": "Blog site",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jorozco4/project-2.git"
+    "url": "git+https://github.com/camjofindlay17/cam-tech-blog.git"
   },
-  "author": "jorozco, JadaE789, camjofindlay17",
+  "author": "camjofindlay17",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jorozco4/project-2/issues"
+    "url": "https://github.com/camjofindlay17/cam-tech-blog/issues"
   },
   "devDependencies": {
     "eslint": "^7.26.0"
@@ -30,8 +30,6 @@
     "express-session": "^1.17.2",
     "handlebars": "^4.7.7",
     "mysql2": "^2.2.5",
-    "sequelize": "^6.6.2",
-    "sneaks-api": "^1.1.2"
-  },
-  "homepage": "https://github.com/jorozco4/project-2#readme"
+    "sequelize": "^6.6.2"
+  }
 }
